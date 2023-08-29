@@ -15,23 +15,23 @@
    
             /* Part of your solution goes here */
    
-            animation: moveFraction 2s forwards;
+            animation: moveFraction 2s 1s forwards;
          }
    
          /* moveFraction goes here */
          @keyframes moveFraction {
             0% {
                 color: yellow;
-                translate: (-355px, 60px) ;
+                transform: translate(-355px, 60px) ;
             }
 
             50% {
-                translate: (0px,60px);
+               transform:translate(0px,60px);
             }
 
             100% {
                 color: red;
-                translate: (0px,0px);
+                transform: translate(0px,0px);
             }
 
          }
@@ -43,7 +43,7 @@
    
          #question:hover {
             /* Part of your solution goes here */
-   transition: scale(0.9);
+   transform: scale(0.9);
          }
          
          span {
