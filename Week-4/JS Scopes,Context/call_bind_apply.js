@@ -32,8 +32,8 @@ class ScientificCalculator extends Calculator {
 }
 
 const scientificCalculatorInstance = new ScientificCalculator();
-
-scientificCalculatorInstance.add.call(this,10,5);
+//we can do directly then why to use call()
+scientificCalculatorInstance.add(10,5);
 
 scientificCalculatorInstance.subsract.apply(this,[10,5]);
 
