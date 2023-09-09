@@ -22,7 +22,7 @@ header {
 
 header > h1 {
    color: var(--theme-dark-color);
-   font-size: 2.5rem;
+   font-size: 2rem;
    margin: 10px 0;
    text-shadow: 2px 2px 3px gray;
 }
@@ -41,12 +41,11 @@ nav li {
 }
 
 nav li a {
+   padding: 10px 20px;
    color: var(--link-font-color);
 }
 
 nav li a:hover {
-   text-decoration: none;
-   color: var(--link-font-color);
    background-color: var(--theme-dark-color);
 }
 
@@ -59,11 +58,8 @@ main {
 }
 
 main > section {
-   margin-top: 30px;
-}
-
-footer {
-   margin-top: 30px;
+   margin-top: 10px;
+   padding-top: 10px;
 }
 
 .benefits-inner-container {
@@ -71,8 +67,48 @@ footer {
    flex-direction: row;
 }
 
+.benefits-container {
+   display: flex;
+   flex-direction: column;
+}
+
 .benefit {
    color: var(--theme-dark-color);
    margin-left: 10px;
    margin-right: 20px;
+}
+
+.vacation-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.vacation-container img {
+   width: 95%;
+}
+
+/* TODO: Add media query for 600px breakpoint */
+@media only screen and (min-width: 600px) {
+  .benefits-container {
+     flex-direction: row;
+  }
+}
+
+/* TODO: Add media query for 700px breakpoint */
+@media only screen and (min-width: 700px) {
+  nav ul {
+     display: flex;
+  }
+}
+/* TODO: Add media query for 800px breakpoint */
+@media only screen and (min-width: 800px) {
+  .vacation-container {
+     flex-direction: row;
+  }
+  .vacation-container > img {
+     width: 50vw;
+  }
+  .vacation-container > div {
+     padding-left: 15px
+  }
 }
