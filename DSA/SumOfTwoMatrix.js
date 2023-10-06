@@ -39,7 +39,7 @@ function sumOfTwoMatrices(rows, cols,array1, array2) {
      // Perform element-wise addition
      for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
-            resultMartix[i][j] = matrix1[i][j] + matrix2[i][j];
+            resultMartix[i][j] = array1[i][j] + array2[i][j];
         }
     }
 
