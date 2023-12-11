@@ -1,0 +1,21 @@
+function isPalindrome(s) {
+    // Remove non-alphanumeric characters and convert to lowercase
+    s = s.replace(/[^0-9a-zA-Z]/g, '').toLowerCase();
+
+    let left = 0;
+    let right = s.length - 1;
+
+    while (left < right) {
+        if (s[left] !== s[right]) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+
+    return true;
+}
+
+const input = "A man, a plan, a canal: Panama";
+const result = isPalindrome(input);
+console.log(result); // Output: true
