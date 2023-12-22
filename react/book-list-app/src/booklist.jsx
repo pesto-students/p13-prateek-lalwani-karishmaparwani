@@ -10,14 +10,16 @@ const books = [
   ];
   
   function Booklist() {
-    return (
-        
-        <ul> 
-        {books.map((book, index) => {
-            
-            <Book key={index} {...book}/>
-        })}
-        </ul>
-  )}
-
+    return ( <div>
+      <h2>Book List</h2>
+      <ul>
+        {books.map((book, index) => (
+          <li key={index}>
+            <strong>Title:</strong> {book.title}, <strong>Author:</strong> {book.author}, <strong>Year:</strong> {book.year}
+          </li>
+        ))}
+      </ul>
+    </div>)
+  }
+  
 export default Booklist;

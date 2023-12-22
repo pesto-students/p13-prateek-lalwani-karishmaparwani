@@ -1,12 +1,8 @@
 import React from 'react';
 
-function Book({ title, author, year }) {
+function Book( title) {
   return (
-    <div className="book">
-      <h3>{title}</h3>
-      <p>Author: {author}</p>
-      <p>Year: {year}</p>
-    </div>
+   console.log({title} + "hi")
   );
 }
 
