@@ -1,0 +1,32 @@
+:root{
+    --font-family: Arial, Helvetica, sans-serif
+}
+img{
+    width: 300px;
+}
+
+ h1 {
+    padding: 4px;
+    font-family: var(--font-family);
+    font-size: 24px;
+    background-color: red;
+    color: white;
+}
+
+#author-name-and-date{
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: lightgray;
+}
+
+ p ol {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: gray;
+}
+
+ a {
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: blue;
+}
