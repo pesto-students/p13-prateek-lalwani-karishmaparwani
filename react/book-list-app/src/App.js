@@ -1,5 +1,6 @@
 //import Booklist from './booklist' -- Functional Component
-import Booklist from './component_deep_dive/booklist'
+//import Booklist from './component_deep_dive/booklist'
+import Booklist from './components/booklist';
 import './App.css';
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
       
       
       {/* Class Component */}
+      {/* <Booklist/> */}
+
       <Booklist/>
     </div>
   );
